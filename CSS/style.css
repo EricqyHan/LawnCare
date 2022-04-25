@@ -46,12 +46,12 @@ h3 {
   margin: 0;
 }
 
-header {
+/* header {
   border: 3px solid orange;
   font-size: 80%;
   padding: 1rem;
-  /* margin-bottom: 1rem; */
-}
+  margin-bottom: 1rem;
+} */
 
 #company-name {
   text-align: left;
@@ -70,6 +70,7 @@ nav {
 
 nav h1 a {
   font-family: var(--noto);
+  font-size: 80%;
 }
 
 nav ul {
@@ -120,5 +121,58 @@ nav h1 [class*="fa-"] {
 
 footer {
   background-color: #f4cb81;
-  height: 10vh;
+  text-align: center;
 }
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+footer li span[class*="fa-solid fa-phone"] {
+  font-size: 100%;
+  color: var(--magenta);
+  margin: 0.5rem;
+}
+
+/* footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+} */
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
+
+/* @media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+} */
